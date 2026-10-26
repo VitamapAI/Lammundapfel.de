@@ -1,16 +1,16 @@
 # Lamm & Apfel – Olaf Willert
 
-Statische Website, vorbereitet für GitHub Pages im Repository `VitamapAI/Lammundapfel.de`.
+Statische Website für den Brandenburger Biobauern und Schäfer Olaf Willert unter Lammundapfel.de.
 
 ## Aufbau
 
 - `index.html`: Startseite und Inhalte.
 - `assets/css/main.css`: Gestaltung.
 - `assets/js/`: vorhandene JavaScript-Dateien.
-- `Bio-Landwirtschaft/`: Fotos einschließlich der zusätzlich mitgelieferten, derzeit nicht eingebundenen Bilder.
+- `Bio-Landwirtschaft/`: Fotos der Inhalte.
 - `.nojekyll`: veröffentlicht die statischen Dateien ohne Jekyll-Verarbeitung.
 
-Die Website benötigt weder PHP noch Datenbank, Installation, Build-Befehl oder kostenpflichtige Serverfunktionen. Bilder und Skripte werden über relative Pfade geladen. Fira Sans und Simonetta werden wie in der Vorlage über Google Fonts eingebunden.
+Die Website benötigt weder PHP noch Datenbank, Installation, Build-Befehl oder kostenpflichtige Serverfunktionen. Bilder und Skripte werden über relative Pfade geladen. Die Webfonts Fira Sans und Simonetta werden wie in der Vorlage über Google Fonts eingebunden.
 
 ## Rechte
 
