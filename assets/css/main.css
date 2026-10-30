@@ -2383,7 +2383,7 @@ input, select, textarea {
 
 /* OW-Aktualisierung: ruhigeres Kaufmanns-Und und eigener Name. */
 #header .brand-ampersand {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Fira Sans", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: .92em;
