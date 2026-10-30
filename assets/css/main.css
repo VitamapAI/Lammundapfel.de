@@ -2380,3 +2380,21 @@ input, select, textarea {
 			}
 
 	}
+
+/* OW-Aktualisierung: ruhigeres Kaufmanns-Und und eigener Name. */
+#header .brand-ampersand {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .92em;
+    white-space: nowrap;
+}
+#header .brand-owner {
+    display: block;
+    margin-top: .45rem;
+    font-family: "Fira Sans", Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #1d1f10;
+}
