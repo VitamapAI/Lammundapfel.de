@@ -2626,3 +2626,17 @@ h2, h3, h4, h5, h6 {
 #main h3.market-name::before {
     content: none !important;
 }
+
+
+/* Olaf: Marktueberschriften 1.6rem */
+#main h3.market-name {
+    font-size: 1.6rem;
+    font-family: "GFS Didot", Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #111111;
+    letter-spacing: 1px;
+    background: transparent;
+    clip-path: none;
+    padding: 0;
+}
