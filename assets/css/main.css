@@ -2662,3 +2662,22 @@ h2, h3, h4, h5, h6 {
 
     background-color: #111111;
 }
+
+
+/* Olaf: Originalkontur der Etiketten */
+
+#main :is(h2, h3:not(.market-name), h4, h5, h6)::before {
+    border-radius: 0 !important;
+    clip-path: none !important;
+
+    background-color: #111111;
+
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200%20H100%20C99.57%202.61%2099.19%205.63%2098.89%209.19%20C98.72%2011.29%2098.56%2014.36%2098.25%2020.48%20C97.82%2029.21%2097.62%2035.70%2097.54%2038.23%20C96.88%2057.51%2095.43%2073.56%2095.43%2073.56%20C94.24%2086.68%2092.83%2095.36%2092.03%20100%20H0%20Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") !important;
+    mask-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%200%20H100%20C99.57%202.61%2099.19%205.63%2098.89%209.19%20C98.72%2011.29%2098.56%2014.36%2098.25%2020.48%20C97.82%2029.21%2097.62%2035.70%2097.54%2038.23%20C96.88%2057.51%2095.43%2073.56%2095.43%2073.56%20C94.24%2086.68%2092.83%2095.36%2092.03%20100%20H0%20Z%22%20fill%3D%22white%22%2F%3E%3C%2Fsvg%3E") !important;
+
+    -webkit-mask-size: 100% 100% !important;
+    mask-size: 100% 100% !important;
+
+    -webkit-mask-repeat: no-repeat !important;
+    mask-repeat: no-repeat !important;
+}
