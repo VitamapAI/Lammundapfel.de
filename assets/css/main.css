@@ -2640,3 +2640,25 @@ h2, h3, h4, h5, h6 {
     clip-path: none;
     padding: 0;
 }
+
+
+/* Olaf: weiche Etikettenkurve und Maerkte 1.3rem */
+
+/* Marktüberschriften kleiner */
+#main h3.market-name {
+    font-size: 1.3rem;
+}
+
+/* Etikettenbalken mit durchgehend weicher Kurve */
+#main :is(h2, h3:not(.market-name), h4, h5, h6)::before {
+
+    /* Bisherige kantige SVG-Maske aufheben */
+    -webkit-mask: none !important;
+    mask: none !important;
+    clip-path: none !important;
+
+    /* Elliptische, weich auslaufende Rundung */
+    border-bottom-right-radius: 1.15em 88%;
+
+    background-color: #111111;
+}
