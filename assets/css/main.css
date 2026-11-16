@@ -2501,3 +2501,61 @@ h2, h3, h4, h5, h6 {
     font-style: normal;
     color: inherit;
 }
+
+
+/* Olaf Etikettstil Korrektur 2026 */
+
+/* Hauptüberschrift: schwarz, Didot Regular */
+#header h1.titel {
+    color: #111111 !important;
+}
+
+#header h1.titel > strong {
+    font-family: "GFS Didot", Georgia, serif;
+    font-style: normal !important;
+    font-weight: 400;
+    color: #111111 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    clip-path: none !important;
+    padding: 0;
+}
+
+/* Kaufmanns-Und: Fira Sans, ebenfalls schwarz */
+#header h1.titel .brand-ampersand {
+    font-family: "Fira Sans", Arial, sans-serif;
+    font-style: normal !important;
+    color: #111111 !important;
+}
+
+/* Übrige Überschriften im Etikettenstil */
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {
+    font-family: "GFS Didot", Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+
+    color: #ffffff;
+    background: #111111;
+
+    display: inline-block;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    /* Mehr Raum oberhalb der Schrift */
+    padding: 0.35em 1.1em 0.14em 0.45em;
+
+    /* Rechts schräg und leicht abgeflacht */
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        calc(100% - 0.35em) 78%,
+        calc(100% - 0.7em) 100%,
+        0 100%
+    );
+
+    line-height: 1.3;
+}
