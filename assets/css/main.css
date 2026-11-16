@@ -2592,3 +2592,37 @@ h2, h3, h4, h5, h6 {
     max-width: 100%;
     letter-spacing: 1px;
 }
+
+
+/* Olaf Etikett: geschwungene rechte Kante */
+
+/* Schwarze Etiketten, ausgenommen die Marktnamen */
+#main :is(h2, h3:not(.market-name), h4, h5, h6) {
+    position: relative;
+    isolation: isolate;
+    background: transparent !important;
+    clip-path: none !important;
+    padding: 0.35em 2em 0.14em 0.45em;
+}
+
+/* Schwarzer Hintergrund mit weicher rechter Kurve */
+#main :is(h2, h3:not(.market-name), h4, h5, h6)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #111111;
+
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 0 H100 C99 19 99 53 97 71 C95 86 93 95 91 100 H0 Z' fill='white'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 0 H100 C99 19 99 53 97 71 C95 86 93 95 91 100 H0 Z' fill='white'/%3E%3C/svg%3E");
+
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* Marktnamen bleiben ohne schwarzen Hintergrund */
+#main h3.market-name::before {
+    content: none !important;
+}
